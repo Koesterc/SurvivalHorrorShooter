@@ -8,23 +8,16 @@ public abstract class BaseWeapon : MonoBehaviour {
     public string desc;
     public enum Type { Handgun, SubMachineGun, AssaultRifle, SniperRifle, Shotgun, Magnum };
     public Type type;
-    [Header("Fire Power")]
-    [Space(2)]
+    [Space(5)]
     public FirePower firePower;
-    [Header("Capacity")]
-    [Space(2)]
+    [Space(5)]
     public Capacity capacity;
-    [Space(2)]
-    [Header("Reload")]
+    [Space(5)]
     public Reload reload;
-    [Space(2)]
-    [Header("Rate of Fire")]
+    [Space(5)]
     public FireRate fireRate;
-    [Space(2)]
-    [Header("Weapon's Handling")]
+    [Space(5)]
     public Handling handling;
-    [HideInInspector]
-    public int ammo;
     [HideInInspector]
     public Sounds sounds;
     [HideInInspector]
@@ -40,8 +33,7 @@ public class FirePower
     public DamageType damageType;
     public float maxDamage;
     public float force;
-    [Header("Upgrades")]
-    [Space(2)]
+    [Space(5)]
     public Upgrades upgrades;
     [System.Serializable]
     public class Upgrades
@@ -58,9 +50,10 @@ public class FirePower
 [System.Serializable]
 public class Capacity
 {
+    [HideInInspector]
+    public int ammo;
     public int maxCapacity;
-    [Header("Upgrades")]
-    [Space(2)]
+    [Space(5)]
     public Upgrades upgrades;
     [System.Serializable]
     public class Upgrades
@@ -78,8 +71,7 @@ public class Capacity
 public class Reload
 {
     public float maxReload;
-    [Header("Upgrades")]
-    [Space(2)]
+    [Space(5)]
     public Upgrades upgrades;
     [System.Serializable]
     public class Upgrades
@@ -97,8 +89,7 @@ public class Reload
 public class FireRate
 {
     public float maxFireRate;
-    [Header("Upgrades")]
-    [Space(2)]
+    [Space(5)]
     public Upgrades upgrades;
     [System.Serializable]
     public class Upgrades

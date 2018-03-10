@@ -20,7 +20,7 @@ public class Weapon : BaseWeapon {
         sounds.bulletDrop = transform.Find("Sounds/BulletDrop").gameObject.GetComponent<AudioController>();
         particles.muzzleFlash = transform.Find("Particles/MuzzleFlash").gameObject;
         lineRenderer = transform.parent.gameObject.GetComponent<LineRenderer>();
-        ammo = capacity.maxCapacity;
+        capacity.ammo = capacity.maxCapacity;
 	}
 	
 	// Update is called once per frame
@@ -46,10 +46,10 @@ public class Weapon : BaseWeapon {
 
         RaycastHit hit;
 
-        muzzle.rotation = Quaternion.Euler(muzzle.localRotation.x + UnityEngine.Random.Range(-handling.accuracy, +handling.accuracy),
-            muzzle.localRotation.x + UnityEngine.Random.Range(-handling.accuracy, +handling.accuracy), muzzle.localRotation.z);
+        muzzle.localRotation = Quaternion.Euler(muzzle.rotation.y + UnityEngine.Random.Range(-handling.accuracy, +handling.accuracy),
+            muzzle.rotation.x + UnityEngine.Random.Range(-handling.accuracy, +handling.accuracy), 0);
 
-        if (Physics.Raycast(muzzle.position, muzzle.forward, out hit, handling.range))
+        if (Physics.Raycast(muzzle.position, muzzle.right, out hit, handling.range))
         {
                 if (hit.rigidbody != null)
                 {
@@ -58,7 +58,7 @@ public class Weapon : BaseWeapon {
             if (hit.transform.gameObject.GetComponent<Health>() != null)
                 hit.transform.gameObject.GetComponent<Health>().TakeDamage(firePower.maxDamage);
         }
-        lineRenderer.SetPosition(hits+1, muzzle.forward * handling.range);
+        lineRenderer.SetPosition(hits+1, muzzle.right * handling.range);
         muzzle.rotation = Quaternion.identity;
         StartCoroutine(wait());
     }
