@@ -299,11 +299,11 @@
   <ItemGroup>
     <Compile Include="Assets\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Editor\CFX_SpawnSystemEditor.cs" />
-    <Compile Include="Assets\Manoeuvre FPS Controller FREE\Scripts\Controller\Camera Controller\Editor\CameraControllerEditor.cs" />
-    <Compile Include="Assets\Manoeuvre FPS Controller FREE\Scripts\Controller\FPS Controller\Editor\ManoeuvreFPSControllerEditor.cs" />
-    <Compile Include="Assets\Manoeuvre FPS Controller FREE\Scripts\Controller\Game Controller\Editor\gc_PlayerHealthManagerEditor.cs" />
-    <Compile Include="Assets\Manoeuvre FPS Controller FREE\Scripts\Controller\Game Controller\Editor\gc_StateManagerEditor.cs" />
-    <Compile Include="Assets\Manoeuvre FPS Controller FREE\Scripts\Editor\WizardEditor.cs" />
+    <Compile Include="Assets\Scripts\Controller\Camera Controller\Editor\CameraControllerEditor.cs" />
+    <Compile Include="Assets\Scripts\Controller\FPS Controller\Editor\ManoeuvreFPSControllerEditor.cs" />
+    <Compile Include="Assets\Scripts\Controller\Game Controller\Editor\gc_PlayerHealthManagerEditor.cs" />
+    <Compile Include="Assets\Scripts\Controller\Game Controller\Editor\gc_StateManagerEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\WizardEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\JMO Assets\!JMO Assets Readme.txt" />
@@ -322,8 +322,8 @@
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
     <None Include="Assets\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
     <None Include="Assets\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
-    <None Include="Assets\Manoeuvre FPS Controller FREE\Prototyping\Prototyping\Shaders\WorldCoordDiffuse.shader" />
     <None Include="Assets\Modern Russian Assault Rifle\Notes.txt" />
+    <None Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Prototyping\Prototyping\Shaders\WorldCoordDiffuse.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
