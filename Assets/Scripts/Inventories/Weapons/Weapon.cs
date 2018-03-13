@@ -67,9 +67,9 @@ public class Weapon : BaseWeapon {
         }
         lineRenderer.SetPosition(hits+1, muzzle.right * handling.range);
         muzzle.rotation = Quaternion.identity;
-        StartCoroutine(wait());
+        StartCoroutine(Wait());
     }
-    IEnumerator wait()
+    IEnumerator Wait()
     {
         yield return null;
         lineRenderer.enabled = false;

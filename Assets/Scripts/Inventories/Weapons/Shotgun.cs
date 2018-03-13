@@ -76,9 +76,9 @@ public class Shotgun : BaseWeapon
           //  hits++;
             muzzle.rotation = Quaternion.identity;
         }
-        StartCoroutine(wait());
+        StartCoroutine(Wait());
     }
-    IEnumerator wait()
+    IEnumerator Wait()
     {
         yield return null;
         lineRenderer.enabled = false;

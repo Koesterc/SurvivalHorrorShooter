@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Combat: MonoBehaviour {
     public List<BaseWeapon> weapons;
-    int curSelected = 1;
+    int curSelected = 2;
     public Text ammoCount;
     bool canShoot = true;
     float lastShot;

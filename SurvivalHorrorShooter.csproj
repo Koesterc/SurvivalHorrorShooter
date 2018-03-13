@@ -315,6 +315,7 @@
     <Compile Include="Assets\Scripts\Health\Idamagable.cs" />
     <Compile Include="Assets\Scripts\Inventories\AmmoStorage\Inventory.cs" />
     <Compile Include="Assets\Scripts\Inventories\Weapons\BaseWeapons\BaseWeapon.cs" />
+    <Compile Include="Assets\Scripts\Inventories\Weapons\BurstFire.cs" />
     <Compile Include="Assets\Scripts\Inventories\Weapons\Shotgun.cs" />
     <Compile Include="Assets\Scripts\Inventories\Weapons\Weapon.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
