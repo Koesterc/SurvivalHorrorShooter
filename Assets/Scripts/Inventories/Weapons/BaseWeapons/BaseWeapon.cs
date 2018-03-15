@@ -9,6 +9,7 @@ public abstract class BaseWeapon : MonoBehaviour {
     public string desc;
     public enum Type { Handgun, SubMachineGun, AssaultRifle, SniperRifle, Shotgun, Magnum };
     public Type type;
+    public Sprite weaponIcon;
     [Space(5)]
     public FirePower firePower;
     [Space(5)]

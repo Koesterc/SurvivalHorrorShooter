@@ -13,11 +13,12 @@ public class Shotgun : BaseWeapon
 
     [SerializeField]
     GameObject smoke;
+    [SerializeField]
+    GameObject sgSmoke;
 
     // Use this for initialization
     void Start()
     {
-        wait2 = Wait2();
         //getting the weapon's muzzle
         muzzle = transform.Find("Muzzle");
         sounds.gunShot = transform.Find("Sounds/Gunshot").gameObject.GetComponent<AudioController>();
@@ -41,17 +42,7 @@ public class Shotgun : BaseWeapon
         capacity.ammo--;
         GameManager.ui.texts.ammoCount.text = "Ammo: " + capacity.ammo.ToString() + "/" + ammoStorage.ammo.ToString();
 
-        //assigning the coroutine
-        StopCoroutine(wait2);
-        wait2 = Wait2();
-        StartCoroutine(wait2);
-
         sounds.gunShot.Play();
-    //    int hits = 0;
-     //   lineRenderer.positionCount = firePower.shotsPerFire + 1;
-    //    lineRenderer.enabled = true;
-    //    lineRenderer.SetPosition(hits, muzzle.position);
-        particles.muzzleFlash.SetActive(true);
 
         RaycastHit hit;
 
@@ -72,22 +63,9 @@ public class Shotgun : BaseWeapon
 
                 Destroy(Instantiate(smoke, hit.point, Quaternion.LookRotation(hit.normal)), 3f);
             }
-        //    lineRenderer.SetPosition(hits + 1, muzzle.right * handling.range);
-          //  hits++;
             muzzle.rotation = Quaternion.identity;
         }
-        StartCoroutine(Wait());
-    }
-    IEnumerator Wait()
-    {
-        yield return null;
-        lineRenderer.enabled = false;
-    }
-
-    IEnumerator Wait2()
-    {
-        yield return new WaitForSeconds(.1f);
-        particles.muzzleFlash.SetActive(false);
+        Destroy(Instantiate(sgSmoke, muzzle.position, muzzle.rotation),1f);
     }
 
     public override void Reload()

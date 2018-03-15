@@ -287,43 +287,43 @@
       <HintPath>Library\UnityAssemblies\UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="JMOAssets">
-      <HintPath>Assets\JMO Assets\Editor\JMOAssets.dll</HintPath>
+      <HintPath>Assets\Plugins\JMO Assets\Editor\JMOAssets.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\AudioScripts\AudioController.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Controller\Camera Controller\CameraController.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Controller\FPS Controller\ManoeuvreFPSController.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Controller\Game Controller\gc_PlayerHealthManager.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Controller\Game Controller\gc_StateManager.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Controller\ShootingController\Combat.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Health\Health.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Health\Idamagable.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Inventories\AmmoStorage\Inventory.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Inventories\Weapons\BaseWeapons\BaseWeapon.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Inventories\Weapons\Shotgun.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Inventories\Weapons\Weapon.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Scripts\Managers\UI.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
+    <Compile Include="Assets\Plugins\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\JMO Assets\!JMO Assets Readme.txt" />
-    <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
-    <None Include="Assets\JMO Assets\WarFX\!WarFX Readme.txt" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Add Scroll.shader" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
-    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
-    <None Include="Assets\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
-    <None Include="Assets\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
     <None Include="Assets\Modern Russian Assault Rifle\Notes.txt" />
+    <None Include="Assets\Plugins\JMO Assets\!JMO Assets Readme.txt" />
+    <None Include="Assets\Plugins\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\!WarFX Readme.txt" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S Add Scroll.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\Plugins\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
     <None Include="Assets\Plugins\Manoeuvre FPS Controller FREE\Prototyping\Prototyping\Shaders\WorldCoordDiffuse.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

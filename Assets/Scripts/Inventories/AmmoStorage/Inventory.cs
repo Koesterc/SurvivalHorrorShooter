@@ -28,7 +28,7 @@ public class Inventory : MonoBehaviour
         public SMGBullets smgBullets;
         public ARBullets arBullets;
         public SniperRounds sniperRounds;
-        public SniperRounds magnumRounds;
+        public MagnumRounds magnumRounds;
 
 
         [System.Serializable]

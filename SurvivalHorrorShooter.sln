@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurvivalHorrorShooter.Plugins", "SurvivalHorrorShooter.Plugins.csproj", "{337AF97A-6B88-5AFC-D031-522796EB680F}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurvivalHorrorShooter", "SurvivalHorrorShooter.csproj", "{CCBA8CA9-9EAC-8683-FCDA-CD904C312DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurvivalHorrorShooter.Editor.Plugins", "SurvivalHorrorShooter.Editor.Plugins.csproj", "{DE23351E-78FF-D62A-50E6-B54C9D74DE40}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurvivalHorrorShooter.Editor", "SurvivalHorrorShooter.Editor.csproj", "{B736F787-B9DF-813F-9E44-7D33E97CD4C2}"
 EndProject
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{337AF97A-6B88-5AFC-D031-522796EB680F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337AF97A-6B88-5AFC-D031-522796EB680F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337AF97A-6B88-5AFC-D031-522796EB680F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337AF97A-6B88-5AFC-D031-522796EB680F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CCBA8CA9-9EAC-8683-FCDA-CD904C312DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CCBA8CA9-9EAC-8683-FCDA-CD904C312DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCBA8CA9-9EAC-8683-FCDA-CD904C312DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCBA8CA9-9EAC-8683-FCDA-CD904C312DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE23351E-78FF-D62A-50E6-B54C9D74DE40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE23351E-78FF-D62A-50E6-B54C9D74DE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE23351E-78FF-D62A-50E6-B54C9D74DE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE23351E-78FF-D62A-50E6-B54C9D74DE40}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B736F787-B9DF-813F-9E44-7D33E97CD4C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B736F787-B9DF-813F-9E44-7D33E97CD4C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B736F787-B9DF-813F-9E44-7D33E97CD4C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
