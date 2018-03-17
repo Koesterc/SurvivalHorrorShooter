@@ -55,7 +55,7 @@ public class BurstFire : BaseWeapon
             yield return new WaitForSeconds(.065f);
             //subtracts from ammo and displays ammo out of max ammo on the UI (i.e. Ammo: 35/100)
             capacity.ammo--;
-            GameManager.ui.texts.ammoCount.text = "Ammo: " + capacity.ammo.ToString() + "/" + ammoStorage.ammo.ToString();
+            DisplayAmmo();
 
             //assigning the coroutine
             StopCoroutine(wait2);
@@ -108,6 +108,11 @@ public class BurstFire : BaseWeapon
     {
         //refilling the ammo
         capacity.ammo += ammoStorage.Refill(capacity.maxCapacity - capacity.ammo);
+        DisplayAmmo();
+    }
+
+    public override void DisplayAmmo()
+    {
         //updating the current ammo for the HUD
         GameManager.ui.texts.ammoCount.text = "Ammo: " + capacity.ammo.ToString() + "/" + ammoStorage.ammo.ToString();
     }

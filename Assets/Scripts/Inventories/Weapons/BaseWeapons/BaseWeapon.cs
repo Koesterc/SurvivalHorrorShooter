@@ -27,6 +27,7 @@ public abstract class BaseWeapon : MonoBehaviour {
     public abstract void Fire();
     public abstract void Reload();
     public abstract int Ammo();
+    public abstract void DisplayAmmo();
 }
 
 [System.Serializable]

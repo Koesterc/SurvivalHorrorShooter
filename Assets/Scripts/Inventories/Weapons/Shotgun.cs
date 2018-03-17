@@ -40,7 +40,7 @@ public class Shotgun : BaseWeapon
     {
         //subtracts from ammo and displays ammo out of max ammo on the UI (i.e. Ammo: 35/100)
         capacity.ammo--;
-        GameManager.ui.texts.ammoCount.text = "Ammo: " + capacity.ammo.ToString() + "/" + ammoStorage.ammo.ToString();
+        DisplayAmmo();
 
         sounds.gunShot.Play();
 
@@ -72,11 +72,16 @@ public class Shotgun : BaseWeapon
     {
         //refilling the ammo
         capacity.ammo += ammoStorage.Refill(capacity.maxCapacity - capacity.ammo);
-        //updating the current ammo for the HUD
-        GameManager.ui.texts.ammoCount.text = "Ammo: " + capacity.ammo.ToString() + "/" + ammoStorage.ammo.ToString();
+        DisplayAmmo();
     }
     public override int Ammo()
     {
         return ammoStorage.ammo;
+    }
+
+    public override void DisplayAmmo()
+    {
+        //updating the current ammo for the HUD
+        GameManager.ui.texts.ammoCount.text = "Ammo: " + capacity.ammo.ToString() + "/" + ammoStorage.ammo.ToString();
     }
 }

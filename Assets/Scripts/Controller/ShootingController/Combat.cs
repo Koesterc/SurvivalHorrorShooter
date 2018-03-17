@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Combat: MonoBehaviour {
     public List<BaseWeapon> weapons;
-    int curSelected = 1;
+    int curSelected = 0;
     public Text ammoCount;
     bool canShoot = true;
     float lastShot;
@@ -15,7 +15,8 @@ public class Combat: MonoBehaviour {
         Transform firearms = transform.Find("FPS Camera/Weapons");
         foreach (Transform firearm in firearms)
             weapons.Add(firearm.gameObject.GetComponent<BaseWeapon>());
-	}
+        weapons[curSelected].DisplayAmmo();
+    }
 	// Update is called once per frame
 	void Update () {
         if (Input.GetButton("Fire1") && lastShot <= Time.time)
@@ -27,6 +28,11 @@ public class Combat: MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.R) && weapons[curSelected].capacity.ammo < weapons[curSelected].capacity.maxCapacity && weapons[curSelected].Ammo() > 0 && canShoot)
             StartCoroutine(Reload());
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            WeaponSwitch(-1);
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+            WeaponSwitch(+1);
 
     }
         
@@ -43,5 +49,16 @@ public class Combat: MonoBehaviour {
     public void Shoot()
     {
         weapons[curSelected].Fire();
+    }
+
+    public void WeaponSwitch(int dir)
+    {
+        if (!canShoot)
+            return;
+        curSelected += dir;
+        if (curSelected < 0)
+            curSelected = weapons.Count-1;
+        curSelected %= weapons.Count;
+        weapons[curSelected].DisplayAmmo();
     }
 }
