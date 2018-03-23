@@ -307,14 +307,14 @@
     <Compile Include="Assets\Scripts\Health\Health.cs" />
     <Compile Include="Assets\Scripts\Health\Idamagable.cs" />
     <Compile Include="Assets\Scripts\Inventories\AmmoStorage\Inventory.cs" />
-    <Compile Include="Assets\Scripts\Inventories\Weapons\AssaultRifle.cs" />
+    <Compile Include="Assets\Scripts\Inventories\Weapons\AssaultRifles\AssaultRifle.cs" />
+    <Compile Include="Assets\Scripts\Inventories\Weapons\AssaultRifles\BurstFire.cs" />
     <Compile Include="Assets\Scripts\Inventories\Weapons\BaseWeapons\BaseWeapon.cs" />
-    <Compile Include="Assets\Scripts\Inventories\Weapons\BurstFire.cs" />
-    <Compile Include="Assets\Scripts\Inventories\Weapons\Handgun.cs" />
-    <Compile Include="Assets\Scripts\Inventories\Weapons\Magnum.cs" />
-    <Compile Include="Assets\Scripts\Inventories\Weapons\Shotgun.cs" />
-    <Compile Include="Assets\Scripts\Inventories\Weapons\SniperRifle.cs" />
-    <Compile Include="Assets\Scripts\Inventories\Weapons\SubMachineGun.cs" />
+    <Compile Include="Assets\Scripts\Inventories\Weapons\Handguns\Handgun.cs" />
+    <Compile Include="Assets\Scripts\Inventories\Weapons\Magnums\Magnum.cs" />
+    <Compile Include="Assets\Scripts\Inventories\Weapons\Rifles\SniperRifle.cs" />
+    <Compile Include="Assets\Scripts\Inventories\Weapons\Shotguns\Shotgun.cs" />
+    <Compile Include="Assets\Scripts\Inventories\Weapons\SubmachineGuns\SubMachineGun.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\UI.cs" />
   </ItemGroup>
