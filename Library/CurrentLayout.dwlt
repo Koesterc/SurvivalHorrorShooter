@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 613}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 636
-  m_MinSize: {x: 579, y: 563}
+  m_MinSize: {x: 583, y: 563}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 5049
+  controlID: 131
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 563}
   m_MaxSize: {x: 4002, y: 12063}
   vertical: 1
-  controlID: 5223
+  controlID: 132
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,8 +180,8 @@ MonoBehaviour:
     y: 226
     width: 796
     height: 227
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -233,10 +233,10 @@ MonoBehaviour:
     y: 0
     width: 570
     height: 636
-  m_MinSize: {x: 377, y: 371}
+  m_MinSize: {x: 381, y: 392}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 5050
+  controlID: 44
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -257,10 +257,10 @@ MonoBehaviour:
     y: 0
     width: 570
     height: 365
-  m_MinSize: {x: 377, y: 100}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 381, y: 121}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 5051
+  controlID: 45
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -304,8 +304,8 @@ MonoBehaviour:
     y: 0
     width: 283
     height: 365
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -474,7 +474,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.070255846, y: 0.23268706, z: -0.016856195, w: -0.96986425}
     speed: 2
-    m_Value: {x: -0.07025585, y: 0.23268707, z: -0.016856197, w: -0.9698643}
+    m_Value: {x: -0.070255846, y: 0.23268706, z: -0.016856195, w: -0.96986425}
   m_Size:
     m_Target: 3.0207865
     speed: 2
@@ -663,24 +663,24 @@ MonoBehaviour:
     height: 344
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 89}
-    m_SelectedIDs: 56340000
-    m_LastClickedID: 13398
-    m_ExpandedIDs: f677fffff877fffffa77fffffe77ffffd278ffffea78ffff1c79ffff2079ffff5079ffff5279ffffe0f3ffffeaf3ffffecf3ffffc6f4ffffdaf4fffff2f4fffff6f4ffff26f5ffff9efbffff00000000563400009034000044350000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 7a080000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9efbffff000000009a340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Cube
-      m_OriginalName: Cube
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 12982
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
@@ -716,7 +716,7 @@ MonoBehaviour:
     width: 281
     height: 344
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 396.95508}
+  m_ScrollPosition: {x: 0, y: 74.90178}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 138
@@ -751,7 +751,7 @@ MonoBehaviour:
     height: 250
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: assault
+    m_NameFilter: sub
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -762,11 +762,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Inventories/Weapons/SubmachineGuns
+    - Assets/Scripts/Inventories/Weapons/Rifles
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Inventories/Weapons/SubmachineGuns
+  - Assets/Scripts/Inventories/Weapons/Rifles
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Chris\Desktop\GitHub\SurvivalHorrorShooter
   m_IsLocked: 0
@@ -774,7 +774,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 443}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de270000a4280000ec280000f42800001c29000022290000da290000162a00004c2a0000922a0000b22a0000d02a00001a2b0000382b00006e2b0000802b0000902b00003e2c00007e2c0000c22c0000462d00009e2d00003e2e0000522e0000822e0000ae2e0000b42e0000b82e0000e62e00003c2f00006c30000078300000a63000001831000020310000443100008c310000e4310000ae3a0000b03a0000b23a0000b43a0000b63a0000ffffff7f
+    m_ExpandedIDs: 00000000e2270000a8280000f0280000f82800002029000026290000de2900001a2a0000502a0000962a0000b62a0000d42a00001e2b00003c2b0000722b0000842b0000942b0000422c0000822c0000c62c00004a2d0000a22d0000422e0000562e0000862e0000b22e0000b82e0000bc2e0000ea2e0000402f0000703000007c300000aa3000001c310000243100004831000090310000e8310000c23a0000c43a0000c63a0000c83a0000ca3a0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -802,7 +802,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 64f6fbff
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de270000a4280000ec280000f42800001c29000022290000da290000162a00004c2a0000922a0000b22a0000d02a00001a2b0000382b00006e2b0000802b0000902b00003e2c00007e2c0000c22c0000462d00009e2d00003e2e0000522e0000822e0000ae2e0000b42e0000b82e0000e62e00003c2f00006c30000078300000a63000001831000020310000443100008c310000e4310000ae3a0000b03a0000b23a0000b43a0000b63a0000ffffff7f
+    m_ExpandedIDs: 00000000e2270000a8280000f0280000f82800002029000026290000de2900001a2a0000502a0000962a0000b62a0000d42a00001e2b00003c2b0000722b0000842b0000942b0000422c0000822c0000c62c00004a2d0000a22d0000422e0000562e0000862e0000b22e0000b82e0000bc2e0000ea2e0000402f0000703000007c300000aa3000001c310000243100004831000090310000e8310000c23a0000c43a0000c63a0000c83a0000ca3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -60,10 +60,8 @@ public class AssaultRifle : BaseWeapon {
                 {
                     hit.rigidbody.AddForce(hit.normal * -firePower.force);
                 }
-                if (hit.transform.gameObject.GetComponent<Health>() != null)
-                    hit.transform.gameObject.GetComponent<Health>().TakeDamage(firePower.maxDamage);
-
-            print(hit.transform.gameObject.name+ hit.transform.gameObject.GetComponent<Health>());
+                if (hit.collider.gameObject.GetComponent<BaseHealth>() != null)
+                    hit.collider.gameObject.GetComponent<BaseHealth>().TakeDamage(firePower.maxDamage);
             Destroy(Instantiate(smoke, hit.point, Quaternion.LookRotation(hit.normal)), 3f);
         }
         lineRenderer.SetPosition(hits+1, muzzle.right * handling.range);
