@@ -3,26 +3,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour, Idamagable {
-    [SerializeField]
-    float health = 100;
-    [SerializeField]
-    GameObject ragDoll;
+public class Health : BaseHealth, Idamagable
+{
+	public override void TakeDamage (float inDamage) {
+        inDamage = AdditionalDamage(inDamage);
+        coreHealth.TakeDamage(inDamage);
+        print("Worked");
+    }
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	public void TakeDamage (float inDamage) {
-        health -= inDamage;
-        if (health <= 0)
-        {
-            health = 0;
-            GameObject clone = Instantiate(ragDoll, transform.position, transform.rotation);
-            gameObject.SetActive(false);
+    public float AdditionalDamage(float value)
+    {
+        switch (bodyPart) {
+            default:
+                print("core");
+                break;
+            case BodyPart.Torso:
+                print("torso");
+                break;
+            case BodyPart.Limb:
+                print("limb");
+                value *= .5f;
+                break;
+            case BodyPart.Head:
+                print("head");
+                value *= 5f;
+                break;
         }
+        return value;
+
     }
 
      void Idamagable.TakeDamage()

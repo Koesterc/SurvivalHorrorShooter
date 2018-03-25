@@ -64,8 +64,8 @@ public class SniperRifle : BaseWeapon
             {
                 hit.rigidbody.AddForce(hit.normal * -firePower.force);
             }
-            if (hit.transform.gameObject.GetComponent<Health>() != null)
-                hit.transform.gameObject.GetComponent<Health>().TakeDamage(firePower.maxDamage);
+            if (hit.transform.gameObject.GetComponent<BaseHealth>() != null)
+                hit.transform.gameObject.GetComponent<BaseHealth>().TakeDamage(firePower.maxDamage);
             Destroy(Instantiate(smoke, hit.point, Quaternion.LookRotation(hit.normal)), 3f);
         }
         lineRenderer.SetPosition(hits + 1, muzzle.right * handling.range);

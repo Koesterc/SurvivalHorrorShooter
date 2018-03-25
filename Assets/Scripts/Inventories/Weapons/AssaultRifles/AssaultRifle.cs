@@ -62,6 +62,8 @@ public class AssaultRifle : BaseWeapon {
                 }
                 if (hit.transform.gameObject.GetComponent<Health>() != null)
                     hit.transform.gameObject.GetComponent<Health>().TakeDamage(firePower.maxDamage);
+
+            print(hit.transform.gameObject.name+ hit.transform.gameObject.GetComponent<Health>());
             Destroy(Instantiate(smoke, hit.point, Quaternion.LookRotation(hit.normal)), 3f);
         }
         lineRenderer.SetPosition(hits+1, muzzle.right * handling.range);

@@ -305,6 +305,8 @@
     <Compile Include="Assets\Scripts\Controller\Game Controller\gc_PlayerHealthManager.cs" />
     <Compile Include="Assets\Scripts\Controller\Game Controller\gc_StateManager.cs" />
     <Compile Include="Assets\Scripts\Controller\ShootingController\Combat.cs" />
+    <Compile Include="Assets\Scripts\Health\BaseHealth.cs" />
+    <Compile Include="Assets\Scripts\Health\CoreHealth.cs" />
     <Compile Include="Assets\Scripts\Health\Health.cs" />
     <Compile Include="Assets\Scripts\Health\Idamagable.cs" />
     <Compile Include="Assets\Scripts\Inventories\AmmoStorage\Inventory.cs" />
