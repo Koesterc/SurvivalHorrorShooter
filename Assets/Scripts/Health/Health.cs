@@ -6,9 +6,11 @@ using UnityEngine;
 public class Health : MonoBehaviour, Idamagable {
     [SerializeField]
     float health = 100;
-    
-	// Use this for initialization
-	void Start () {
+    [SerializeField]
+    GameObject ragDoll;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -18,6 +20,7 @@ public class Health : MonoBehaviour, Idamagable {
         if (health <= 0)
         {
             health = 0;
+            GameObject clone = Instantiate(ragDoll, transform.position, transform.rotation);
             gameObject.SetActive(false);
         }
     }

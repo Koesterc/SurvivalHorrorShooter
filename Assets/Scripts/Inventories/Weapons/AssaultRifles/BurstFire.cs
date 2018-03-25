@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class BurstFire : AssaultRifle
 {
-    [HideInInspector]
-    public Inventory.AmmunitionStorage.ARBullets ammoStorage { get; private set; }
-    Transform muzzle;
     static LineRenderer lineRenderer;
     IEnumerator wait2;
     bool canFire = true;
@@ -53,6 +50,8 @@ public class BurstFire : AssaultRifle
             yield return new WaitForSeconds(.065f);
             //subtracts from ammo and displays ammo out of max ammo on the UI (i.e. Ammo: 35/100)
             capacity.ammo--;
+            if (capacity.ammo <= 0)
+                capacity.ammo = 0;
             DisplayAmmo();
 
             //assigning the coroutine

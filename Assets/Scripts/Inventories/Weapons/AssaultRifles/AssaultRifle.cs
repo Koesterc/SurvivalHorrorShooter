@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class AssaultRifle : BaseWeapon {
     [HideInInspector]
-    public Inventory.AmmunitionStorage.ARBullets ammoStorage { get; private set; }
-    Transform muzzle;
+    public Inventory.AmmunitionStorage.ARBullets ammoStorage;
+    public Transform muzzle;
     static LineRenderer lineRenderer;
     IEnumerator wait2;
     public GameObject smoke;
