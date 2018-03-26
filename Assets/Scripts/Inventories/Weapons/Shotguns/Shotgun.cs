@@ -8,7 +8,7 @@ public class Shotgun : BaseWeapon
     [HideInInspector]
     public Inventory.AmmunitionStorage.ShotgunShells ammoStorage { get; private set; }
     Transform muzzle;
-    static LineRenderer lineRenderer;
+    //static LineRenderer lineRenderer;
     IEnumerator wait2;
 
     [SerializeField]
@@ -26,7 +26,7 @@ public class Shotgun : BaseWeapon
         sounds.reload = transform.Find("Sounds/Reload").gameObject.GetComponent<AudioController>();
         sounds.bulletDrop = transform.Find("Sounds/BulletDrop").gameObject.GetComponent<AudioController>();
         particles.muzzleFlash = transform.Find("Particles/MuzzleFlash").gameObject;
-        lineRenderer = transform.parent.gameObject.GetComponent<LineRenderer>();
+        //lineRenderer = transform.parent.gameObject.GetComponent<LineRenderer>();
         //the ammo for this weapon that is stored
         ammoStorage = Inventory.ammoStorage.sgShells;
         capacity.ammo = capacity.maxCapacity;

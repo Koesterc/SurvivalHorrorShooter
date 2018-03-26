@@ -22,18 +22,18 @@ namespace Manoeuvre
         float yRotVelocity;
         float xRotVelocity;
 
-        ManoeuvreFPSController fpsController;
+       // ManoeuvreFPSController fpsController;
 
-        Vector3 camPos;
+        //Vector3 camPos;
         
-        CharacterController charController;
+        //CharacterController charController;
 
         // Use this for initialization
         void Start()
         {
-            camPos = transform.localPosition;
-            charController = GetComponentInParent<CharacterController>();
-            fpsController = GetComponentInParent<ManoeuvreFPSController>();
+        //    camPos = transform.localPosition;
+            //charController = GetComponentInParent<CharacterController>();
+       //     fpsController = GetComponentInParent<ManoeuvreFPSController>();
         }
 
         // Update is called once per frame

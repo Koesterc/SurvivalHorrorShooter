@@ -20,6 +20,14 @@ public class Health : BaseHealth, Idamagable
             case BodyPart.Limb:
                 value *= .5f;
                 break;
+            case BodyPart.LeftLeg:
+                coreHealth.gameObject.GetComponent<Chase>().ZombieDown();
+                value *= .5f;
+                break;
+            case BodyPart.RightLeg:
+                coreHealth.gameObject.GetComponent<Chase>().ZombieDown();
+                value *= .5f;
+                break;
             case BodyPart.Head:
                 value *= 2f;
                 break;

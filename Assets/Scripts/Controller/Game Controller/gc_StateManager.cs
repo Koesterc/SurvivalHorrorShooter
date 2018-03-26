@@ -20,12 +20,12 @@ namespace Manoeuvre
         public float radiusWhileShooting;
 
         public static gc_StateManager Instance;
-        GameObject Player;
+        //GameObject Player;
 
         // Use this for initialization
         void Awake()
         {
-            Player = GameObject.FindGameObjectWithTag("Player");
+            //Player = GameObject.FindGameObjectWithTag("Player");
 
             Instance = this;
 

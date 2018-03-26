@@ -17,12 +17,12 @@ namespace Manoeuvre
         public Locomotion Locomotion;
         public PlayerHealth Health;
 
-        Camera camera;
+        Camera _camera;
         CameraController camController;
         Vector3 moveDir = Vector3.zero;
         bool wasGrounded;
         bool Walking = true;
-        bool Jumping = false;
+        //bool Jumping = false;
         float fallTimer = 0f;
         CharacterController charController;
         public static ManoeuvreFPSController Instance;
@@ -55,7 +55,7 @@ namespace Manoeuvre
             charController = GetComponent<CharacterController>();
 
             //get camera ref
-            camera = Camera.main;
+            _camera = Camera.main;
             camController = GetComponentInChildren<CameraController>();
             //init player state to idle
             Locomotion.CurrentPlayerState = PlayerStates.Idle;
@@ -111,7 +111,7 @@ namespace Manoeuvre
             speed = inputs.crouchInput ? Locomotion.crouchSpeed : speed;
             
             //create vector based on horz / vert axis wrt camera direction
-            Vector3 desiredMove = camera.transform.forward * inputs.inputVector.y + camera.transform.transform.right * inputs.inputVector.x;
+            Vector3 desiredMove = _camera.transform.forward * inputs.inputVector.y + _camera.transform.transform.right * inputs.inputVector.x;
 
             //alter move direction with the speed
             moveDir.x = desiredMove.x * speed;
@@ -156,7 +156,7 @@ namespace Manoeuvre
                 //set jump input to false
                 inputs.jumpInput = false;
                 //set jumping flag to true
-                Jumping = true;
+              //  Jumping = true;
                 //jump sound
             }
         }
@@ -201,7 +201,7 @@ namespace Manoeuvre
                 //reset the move direction y value
                 moveDir.y = 0;
                 //reset jumping bool
-                Jumping = false;
+               // Jumping = false;
                 //change state to Landing
                 Locomotion.CurrentPlayerState = PlayerStates.Landing;
 

@@ -15,6 +15,7 @@ public class CoreHealth: MonoBehaviour
             health = 0;
             if (ragDoll){
                 GameObject clone = Instantiate(ragDoll, transform.position, transform.rotation);
+                clone.name = "Dead";
             }
             gameObject.SetActive(false);
         }

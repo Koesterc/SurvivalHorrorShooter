@@ -14,6 +14,9 @@ public class Chase : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (anim.GetBool("isDown"))
+            return;
+
         if (Vector3.Distance(target.position, this.transform.position) < 10)
         {
             Seek();
@@ -47,5 +50,21 @@ public class Chase : MonoBehaviour {
         anim.SetBool("isIdle", true);
         anim.SetBool("isAttacking", false);
         anim.SetBool("isWalking", false);
+    }
+
+    public void ZombieDown()
+    {
+        if (anim.GetBool("isDown"))
+            return;
+        anim.SetBool("isDown", true);
+        anim.Play("Death2");
+        StartCoroutine(Wait());
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(6f);
+        anim.SetBool("isDown", false);
+        anim.Play("Idle");
     }
 }

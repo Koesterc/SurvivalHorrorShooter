@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class BaseWeapon : MonoBehaviour {
 
     public int level;
-    public string name;
+    public string weaponName;
     public string desc;
     public enum Type { Handgun, SubMachineGun, AssaultRifle, SniperRifle, Shotgun, Magnum };
     public Type type;
